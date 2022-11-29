@@ -96,6 +96,14 @@ const Nav = () => {
               CONTACT ME
             </Link>
           </li>
+          <li className="whitespace-nowrap">
+            <button
+              onClick={handleResume}
+              className=" bg-gradient-to-r transition-all from-fuchsia-500 to-orange-600 px-2 shadow-md rounded-sm py-1 text-teal-50 tracking-wider hover:scale-110"
+            >
+              RESUME
+            </button>
+          </li>
         </ul>
         <button
           onClick={() => setToggleNav(!toggleNav)}

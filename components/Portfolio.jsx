@@ -25,11 +25,15 @@ const Portfolio = () => {
         <Link
           href="https://first-portfolio-template.vercel.app/"
           target="_blank"
-          className=" flex flex-col items-center lg:w-2/6 "
+          className=" flex flex-col items-center lg:w-2/6 transition-all gap-5 "
           onMouseOver={() => setProjectOne(firstProject)}
           onMouseLeave={() => setProjectOne(project1)}
         >
-          <Image src={projectOne} className="w-full h-full" alt="project one" />
+          <Image
+            src={projectOne}
+            className="w-full h-full shadow-md rounded-md hover:border-b-4 hover:border-teal-500 transition-all"
+            alt="project one"
+          />
           <p className=" text-gray-200 ">
             Haz click en la imagen para ver el proyecto
           </p>
@@ -37,11 +41,15 @@ const Portfolio = () => {
         <Link
           href="https://animercce.vercel.app/"
           target="_blank"
-          className=" flex flex-col items-center lg:w-2/6 "
+          className=" flex flex-col items-center lg:w-2/6 transition-all gap-5 "
           onMouseOver={() => setProjectTwo(animercce)}
           onMouseLeave={() => setProjectTwo(project2)}
         >
-          <Image src={projectTwo} className="w-full h-full" alt="project two" />
+          <Image
+            src={projectTwo}
+            className="w-full h-full shadow-md rounded-md text-teal-50 tracking-wider hover:border-b-4 hover:border-teal-500 transition-all"
+            alt="project two"
+          />
           <p className=" text-gray-200 ">
             Haz click en la imagen para ver el proyecto
           </p>
