@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=' bg-gray-100 scroll-smooth w-screen ' >
+      <main className=' bg-gray-100 scroll-smooth min-w-screen ' >
         <Nav />
         <Main />
         <About />

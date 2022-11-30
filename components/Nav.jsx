@@ -33,7 +33,7 @@ const Nav = () => {
 
   return (
     <header
-      className={`py-5 flex justify-between fixed w-screen shadow-lg items-center bg-gray-50 z-50 ${
+      className={` py-5 flex justify-between fixed w-screen shadow-lg items-center bg-gray-50 z-50 ${
         toggleNav ? "flex-col" : "flex-row"
       }`}
     >
@@ -41,12 +41,12 @@ const Nav = () => {
         Enzo Gabriel Holgado
       </h1>
       <nav
-        className={` pr-10 w-3/6 flex justify-end ${
-          toggleNav ? " w-11/12 flex-col" : ""
-        }`}
+        className={` pr-10 flex justify-end ${
+          toggleNav ? " w-full flex-col self-start pl-5 pb-10" : ""
+        } w-2/6 lg:w-3/6`}
       >
         <ul
-          className={`flex w-5/6 justify-between items-center font-semibold tracking-wide text-xl drop-shadow-md text-gray-800 ${
+          className={` flex w-5/6 justify-between items-center font-semibold tracking-wide text-xl drop-shadow-md text-gray-800 ${
             screenWidth < 1024 ? "hidden" : ""
           }`}
         >
@@ -72,9 +72,9 @@ const Nav = () => {
           </li>
         </ul>
         <ul
-          className={`${toggleNav ? "" : "hidden"} ${
+          className={` w-full ${toggleNav ? "" : "hidden"} ${
             screenWidth > 1024 ? "hidden" : ""
-          } flex flex-col gap-1 pt-5`}
+          } flex flex-col gap-2 pt-5 `}
         >
           <li className="font-bold whitespace-nowrap transition-all hover:text-teal-600 hover:scale-110 ">
             <Link onClick={() => setToggleNav(false)} href="/">
@@ -108,8 +108,8 @@ const Nav = () => {
         <button
           onClick={() => setToggleNav(!toggleNav)}
           className={` ${screenWidth > 1024 ? "hidden" : ""} ${
-            toggleNav ? " flex w-full ml-5 justify-center animate-bounce " : ""
-          } text-2xl active:relative active:top-px  `}
+            toggleNav ? " flex w-3/6 top-3/4 left-1/4 mt-10 justify-center animate-bounce absolute m-auto text-orange-600" : ""
+          } text-2xl`}
         >
           {toggleNav ? <BiUpArrow /> : <FaBars />}
         </button>

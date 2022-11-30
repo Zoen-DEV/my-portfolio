@@ -10,7 +10,7 @@ const About = () => {
       id="about"
     >
       <div
-        data-aos="flip-up"
+        data-aos="fade-in"
         className="flex flex-col self-start w-11/12 bg-gray-800 rounded-r-md p-5"
       >
         <Image
@@ -74,7 +74,7 @@ const About = () => {
         </div>
       </div>
       <div
-        data-aos="flip-up"
+        data-aos="fade-in"
         className="flex flex-col self-end w-11/12 bg-gray-800 rounded-l-md p-5"
       >
         <Image

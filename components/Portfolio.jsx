@@ -16,12 +16,12 @@ const Portfolio = () => {
       id="portfolio"
     >
       <h1
-        data-aos="fade-up"
+        // data-aos="fade-up"
         className=" font-burtons font-bold text-4xl tracking-wider drop-shadow-md border-t-2 border-orange-400 w-5/6 text-center pt-10 "
       >
         PORTAFOLIO
       </h1>
-      <div data-aos="fade-up" className=" flex flex-wrap gap-10 justify-center">
+      <div  className=" flex flex-wrap gap-10 justify-center">
         <Link
           href="https://first-portfolio-template.vercel.app/"
           target="_blank"
@@ -54,16 +54,6 @@ const Portfolio = () => {
             Haz click en la imagen para ver el proyecto
           </p>
         </Link>
-        {/* <Link
-          href="https://first-portfolio-template.vercel.app/"
-          target="_blank"
-          className=" flex flex-col items-center lg:w-2/6 "
-        >
-          <Image src={firstProject} className=" hover:brightness-75 " />
-          <p className=" text-gray-200 ">
-            Haz click en la imagen para ver el proyecto
-          </p>
-        </Link> */}
       </div>
     </section>
   );
