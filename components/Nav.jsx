@@ -26,7 +26,7 @@ const Nav = () => {
 
   const handleResume = (e) => {
     window.open(
-      "https://docs.google.com/document/d/14gpZwocCpiv0mhCxKU5MrYlVN03MCE3PrIK65lcuChY/edit?usp=sharing",
+      "https://drive.google.com/file/d/1ugAfDt2RYHlqGb1LsWea89GzG83Q7ygw/view?usp=share_link",
       "_blank"
     );
   };
