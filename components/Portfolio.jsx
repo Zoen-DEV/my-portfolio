@@ -25,27 +25,26 @@ const Portfolio = () => {
             alt="project one"
           />
           <div className=" w-5/6 flex flex-col justify-between items-center px-4 ">
-            <h3 className=" text-gray-900 drop-shadow-md font-bold text-xl">Portfolio template</h3>
-            <p className=" w-full text-gray-900 drop-shadow-md ">
-              Tengo conocimientos en lenguajes como:{" "}
+            <h3 className=" text-gray-900 drop-shadow-md font-bold text-2xl">
+              Portfolio template
+            </h3>
+            <p className=" text-xl w-full text-gray-900 drop-shadow-md ">
+              Este es un proyecto individual donde realicé un template de un
+              portafolio con tecnologías como:{" "}
               <span className=" font-semibold text-teal-500 ">
-                JavaScript, Python, TypeScript, HTML, CSS, SQL y noSQL.
+                React, Next.js, Tailwind css y React-icons.
               </span>{" "}
-              con el uso de frameworks y librerias como{" "}
+              El enfoque de este proyecto es que sea intuitivo y fácil de leer,
+              además de haber implementado una funcionalidad de{" "}
               <span className=" font-semibold text-teal-500 ">
-                React.js, Next.js, Redux, Tailwind css
+                Dark and Light themes
               </span>{" "}
-              para el lado del frontend. Y{" "}
-              <span className=" font-semibold text-teal-500 ">
-                Node.js, Express.js, Django, Sequelize, PostgreSQL, MySQL,
-                MongoDB, Mongoose
-              </span>{" "}
-              para backend y base de datos. ¡Entre otras!
+              para la comodidad del usuario.
             </p>
             <Link
               href="https://first-portfolio-template.vercel.app/"
               target="_blank"
-              className=" flex items-center gap-2 self-end bg-gradient-to-r transition-all from-fuchsia-500 to-orange-600 px-1 shadow-md rounded-sm py-px text-teal-50 tracking-wide hover:scale-105 "
+              className=" flex items-center gap-2 self-end bg-gradient-to-r transition-all from-fuchsia-500 to-orange-600 px-2 shadow-md rounded-sm py-1 text-teal-50 tracking-wider hover:scale-110"
             >
               Ver proyecto <BiLink />
             </Link>
