@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import project1 from "../public/project1.png";
 import project2 from "../public/project2.png";
+import project3 from "../public/project3.png";
 import { BiLink } from "react-icons/bi";
 
 const Portfolio = ({ screen }) => {
@@ -25,7 +26,7 @@ const Portfolio = ({ screen }) => {
           } gap-5 rounded-md justify-between `}
         >
           <Image
-            src={project1}
+            src={project3}
             data-aos={screen > 800 ? "fade-right" : ""}
             className={` ${
               screen < 800 ? "w-full" : "w-2/6"
@@ -43,24 +44,37 @@ const Portfolio = ({ screen }) => {
                 screen < 800 ? "text-white" : "text-gray-900"
               } drop-shadow-md font-bold text-2xl`}
             >
-              Portfolio template
+              Voluntariado en We Exchange SAC (Fintech)
             </h3>
             <p
               className={` text-xl w-full ${
                 screen < 800 ? "text-white" : "text-gray-900"
               } drop-shadow-md `}
             >
-              Este es un proyecto individual donde realicé un template de un
-              portafolio con tecnologías como:{" "}
+              Estuve colaborando 2 meses con esta empresa, aquí trabajé junto a
+              un equipo de desarrolladores con{" "}
               <span className=" font-semibold text-teal-500 ">
-                React, Next.js, Tailwind css y React-icons.
+                metodologías ágiles
               </span>{" "}
-              El enfoque de este proyecto es que sea intuitivo y fácil de leer,
-              además de haber implementado una funcionalidad de{" "}
+              realizando la migración de la plataforma de la empresa tanto del
+              lado del frontend (de{" "}
+              <span className=" font-semibold text-teal-500 ">WordPress</span> a
+              una SPA de{" "}
+              <span className=" font-semibold text-teal-500 ">React.js</span>
+              ), como del lado del backend (De una app en{" "}
               <span className=" font-semibold text-teal-500 ">
-                Dark and Light themes
-              </span>{" "}
-              para la comodidad del usuario.
+                Python
+              </span> con{" "}
+              <span className=" font-semibold text-teal-500 ">Flask</span> a una{" "}
+              <span className=" font-semibold text-teal-500 ">APIrest</span> de{" "}
+              <span className=" font-semibold text-teal-500 ">Node.js</span> y{" "}
+              <span className=" font-semibold text-teal-500 ">Express.js</span>
+              ).
+              <br />
+              Aquí también utilizamos tecnologías y herramientas como:{" "}
+              <span className=" font-semibold text-teal-500 ">
+                SCRUM, Jira, GIT, Github, MySQL, Sequelize, Scss, entre otras.
+              </span>
             </p>
             <Link
               href="https://first-portfolio-template.vercel.app/"
