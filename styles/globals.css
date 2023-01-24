@@ -23,3 +23,8 @@ a {
   font-family: "burtons";
   src: url("../public/Burtons.otf");
 }
+
+::selection{
+  background: #0d9488;
+  color: white;
+}
