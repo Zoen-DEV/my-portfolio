@@ -9,7 +9,7 @@ import { BiLink } from "react-icons/bi";
 const Portfolio = ({ screen }) => {
   return (
     <section
-      className="flex flex-col justify-evenly items-center w-full min-h-screen px-5 py-10 gap-20 "
+      className="flex flex-col justify-evenly items-center w-full min-h-screen px-5 py-10 gap-20 pb-20 "
       id="portfolio"
     >
       <h1
