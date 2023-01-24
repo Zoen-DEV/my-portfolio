@@ -35,7 +35,7 @@ const Portfolio = ({ screen }) => {
           <div
             data-aos={screen > 800 ? "fade-in" : ""}
             className={` ${
-              screen < 800 ? "w-full gap-5 py-3" : "w-2/6"
+              screen < 800 ? "w-full gap-5 py-3" : "w-4/6 gap-2"
             } flex flex-col justify-between items-center px-4 `}
           >
             <h3
@@ -73,37 +73,23 @@ const Portfolio = ({ screen }) => {
         </div>
         {screen < 800 ? (
           <div
-            data-aos={screen < 800 ? "fade-in" : ""}
-            className={`flex ${
-              screen < 800 ? "flex-col bg-gray-800  w-full" : "w-5/6"
-            } gap-5 rounded-md justify-between `}
+            data-aos="fade-in"
+            className="flex flex-col bg-gray-800  w-full gap-5 rounded-md justify-between "
           >
             <Image
               src={project1}
-              data-aos={screen > 800 ? "fade-right" : ""}
-              className={` ${
-                screen < 800 ? "w-full" : "w-2/6"
-              } h-full shadow-md rounded-md transition-all`}
+              className={`w-full h-full shadow-md rounded-md transition-all`}
               alt="project one"
             />
             <div
-              data-aos={screen > 800 ? "fade-in" : ""}
               className={` ${
                 screen < 800 ? "w-full gap-5 py-3" : "w-2/6"
               } flex flex-col justify-between items-center px-4 `}
             >
-              <h3
-                className={` ${
-                  screen < 800 ? "text-white" : "text-gray-900"
-                } drop-shadow-md font-bold text-2xl`}
-              >
+              <h3 className={`text-white drop-shadow-md font-bold text-2xl`}>
                 Portfolio template
               </h3>
-              <p
-                className={` text-xl w-full ${
-                  screen < 800 ? "text-white" : "text-gray-900"
-                } drop-shadow-md `}
-              >
+              <p className={` text-xl w-full text-white drop-shadow-md `}>
                 Este es un proyecto individual donde realicé un template de un
                 portafolio con tecnologías como:{" "}
                 <span className=" font-semibold text-teal-500 ">
@@ -127,29 +113,16 @@ const Portfolio = ({ screen }) => {
           </div>
         ) : (
           <div
-            data-aos={screen < 800 ? "fade-in" : ""}
-            className={`flex ${
-              screen < 800 ? "flex-col bg-gray-800  w-full" : "w-5/6"
-            } gap-5 rounded-md justify-between `}
+            className={`flex flex-row w-5/6 gap-20 rounded-md justify-center `}
           >
             <div
-              data-aos={screen > 800 ? "fade-in" : ""}
-              className={` ${
-                screen < 800 ? "w-full gap-5 py-3" : "w-2/6"
-              } flex flex-col justify-between items-center px-4 `}
+              data-aos="fade-in"
+              className={` w-4/6 flex flex-col gap-2 justify-between items-center px-4 `}
             >
-              <h3
-                className={` ${
-                  screen < 800 ? "text-white" : "text-gray-900"
-                } drop-shadow-md font-bold text-2xl`}
-              >
+              <h3 className={`text-gray-900 drop-shadow-md font-bold text-2xl`}>
                 Portfolio template
               </h3>
-              <p
-                className={` text-xl w-full ${
-                  screen < 800 ? "text-white" : "text-gray-900"
-                } drop-shadow-md `}
-              >
+              <p className={` text-xl w-full text-gray-900 drop-shadow-md `}>
                 Este es un proyecto individual donde realicé un template de un
                 portafolio con tecnologías como:{" "}
                 <span className=" font-semibold text-teal-500 ">
@@ -162,14 +135,6 @@ const Portfolio = ({ screen }) => {
                 </span>{" "}
                 para la comodidad del usuario.
               </p>
-              <Image
-                src={project1}
-                data-aos="fade-right"
-                className={` ${
-                  screen < 800 ? "w-full" : "w-2/6"
-                } h-full shadow-md rounded-md transition-all`}
-                alt="project one"
-              />
               <Link
                 href="https://first-portfolio-template.vercel.app/"
                 target="_blank"
@@ -178,6 +143,12 @@ const Portfolio = ({ screen }) => {
                 Ver proyecto <BiLink />
               </Link>
             </div>
+            <Image
+              src={project1}
+              data-aos="fade-left"
+              className={` w-2/6 h-full shadow-md rounded-md transition-all`}
+              alt="project one"
+            />
           </div>
         )}
         <div
@@ -197,7 +168,7 @@ const Portfolio = ({ screen }) => {
           <div
             data-aos={screen > 800 ? "fade-in" : ""}
             className={` ${
-              screen < 800 ? "w-full gap-5 py-3" : "w-2/6"
+              screen < 800 ? "w-full gap-5 py-3" : "w-4/6 gap-2"
             } flex flex-col justify-between items-center px-4 `}
           >
             <h3
@@ -233,19 +204,6 @@ const Portfolio = ({ screen }) => {
             </Link>
           </div>
         </div>
-        {/* <div>
-          <Link
-            href="https://animercce.vercel.app/"
-            target="_blank"
-            className=" flex flex-col items-center lg:w-2/6 transition-all gap-5 "
-          >
-            <Image
-              src={project2}
-              className="w-full h-full shadow-md rounded-md text-teal-50 tracking-wider hover:border-b-4 hover:border-teal-500 transition-all"
-              alt="project two"
-            />
-          </Link>
-        </div> */}
       </article>
     </section>
   );
