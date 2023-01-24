@@ -91,7 +91,7 @@ const About = () => {
           <p className=" tracking-wide text-gray-100 drop-shadow-md ">
             Tengo conocimientos en lenguajes como:{" "}
             <span className=" font-semibold text-teal-500 ">
-              JavaScript, HTML, CSS y SQL.
+              JavaScript, Python, TypeScript, HTML, CSS, SQL y noSQL.
             </span>{" "}
             con el uso de frameworks y librerias como{" "}
             <span className=" font-semibold text-teal-500 ">
@@ -99,7 +99,7 @@ const About = () => {
             </span>{" "}
             para el lado del frontend. Y{" "}
             <span className=" font-semibold text-teal-500 ">
-              Node.js, Express.js, Sequelize, PostgreSQL, MySQL
+              Node.js, Express.js, Django, Sequelize, PostgreSQL, MySQL, MongoDB, Mongoose
             </span>{" "}
             para backend y base de datos. ¡Entre otras!
           </p>
