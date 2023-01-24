@@ -1,11 +1,27 @@
-import Head from 'next/head'
-import About from '../components/About'
-import Contact from '../components/Contact'
-import Main from '../components/Main'
-import Nav from '../components/Nav'
-import Portfolio from '../components/Portfolio'
+import Head from "next/head";
+import { useState, useLayoutEffect } from "react";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Main from "../components/Main";
+import Nav from "../components/Nav";
+import Portfolio from "../components/Portfolio";
+
+function useWindowSize() {
+  const [size, setSize] = useState([0, 0]);
+  useLayoutEffect(() => {
+    function updateSize() {
+      setSize([window.innerWidth, window.innerHeight]);
+    }
+    window.addEventListener("resize", updateSize);
+    updateSize();
+    return () => window.removeEventListener("resize", updateSize);
+  }, []);
+  return size;
+}
 
 export default function Home() {
+  const [screen, height] = useWindowSize();
+  
   return (
     <div>
       <Head>
@@ -14,13 +30,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className=' bg-gray-100 scroll-smooth min-w-screen ' >
-        <Nav />
+      <main className=" bg-gray-100 scroll-smooth min-w-screen ">
+        <Nav
+          screen={screen}
+        />
         <Main />
         <About />
-        <Portfolio />
+        <Portfolio screen={screen} />
         <Contact />
       </main>
     </div>
-  )
+  );
 }

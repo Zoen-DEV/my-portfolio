@@ -1,28 +1,10 @@
 import Link from "next/link";
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { BiUpArrow } from "react-icons/bi";
 
-function useWindowSize() {
-  const [size, setSize] = useState([0, 0]);
-  useLayoutEffect(() => {
-    function updateSize() {
-      setSize([window.innerWidth, window.innerHeight]);
-    }
-    window.addEventListener("resize", updateSize);
-    updateSize();
-    return () => window.removeEventListener("resize", updateSize);
-  }, []);
-  return size;
-}
-
-const Nav = () => {
-  const [screenWidth, screenHeight] = useWindowSize();
+const Nav = ({screen}) => {
   const [toggleNav, setToggleNav] = useState(false);
-
-  useEffect(() => {
-    screenWidth > 1024 ? setToggleNav(false) : setToggleNav(toggleNav);
-  }, [screenWidth]);
 
   const handleResume = (e) => {
     window.open(
@@ -30,6 +12,10 @@ const Nav = () => {
       "_blank"
     );
   };
+
+  useEffect(() => {
+    screen > 1024 ? setToggleNav(false) : setToggleNav(toggleNav);
+  }, [screen]);
 
   return (
     <header
@@ -47,7 +33,7 @@ const Nav = () => {
       >
         <ul
           className={` flex w-5/6 justify-between items-center font-semibold tracking-wide text-xl drop-shadow-md text-gray-800 ${
-            screenWidth < 1024 ? "hidden" : ""
+            screen < 1024 ? "hidden" : ""
           }`}
         >
           <li className="whitespace-nowrap transition-all hover:text-teal-600 hover:scale-110 ">
@@ -73,7 +59,7 @@ const Nav = () => {
         </ul>
         <ul
           className={` w-full ${toggleNav ? "" : "hidden"} ${
-            screenWidth > 1024 ? "hidden" : ""
+            screen > 1024 ? "hidden" : ""
           } flex flex-col gap-2 pt-5 `}
         >
           <li className="font-bold whitespace-nowrap transition-all hover:text-teal-600 hover:scale-110 ">
@@ -107,7 +93,7 @@ const Nav = () => {
         </ul>
         <button
           onClick={() => setToggleNav(!toggleNav)}
-          className={` ${screenWidth > 1024 ? "hidden" : ""} ${
+          className={` ${screen > 1024 ? "hidden" : ""} ${
             toggleNav ? " flex w-3/6 top-3/4 left-1/4 mt-10 justify-center animate-bounce absolute m-auto text-orange-600" : ""
           } text-2xl`}
         >
