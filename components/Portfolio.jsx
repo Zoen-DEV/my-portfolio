@@ -85,6 +85,11 @@ const Portfolio = ({ screen }) => {
             </Link>
           </div>
         </div>
+        {screen > 800 ? (
+          <div className="w-full border-b-2 border-gray-200"></div>
+        ) : (
+          <></>
+        )}
         {screen < 800 ? (
           <div
             data-aos="fade-in"
@@ -167,6 +172,12 @@ const Portfolio = ({ screen }) => {
             />
           </div>
         )}
+
+        {screen > 800 ? (
+          <div className="w-full border-b-2 border-gray-200"></div>
+        ) : (
+          <></>
+        )}
         <div
           data-aos={screen < 800 ? "fade-in" : ""}
           className={`flex ${
@@ -194,18 +205,21 @@ const Portfolio = ({ screen }) => {
             >
               Animercce (Henry proyecto final)
             </h3>
-            <p className={` text-xl w-full text-white drop-shadow-md `}>
+            <p
+              className={` text-xl w-full ${
+                screen < 800 ? "text-white" : "text-gray-900"
+              } drop-shadow-md `}
+            >
               Este fue el proyecto final del bootcamp de Henry, donde pude
               reforzar todos mis conocimientos tanto del lado del frontend como
-              del backend.
-              El proyecto consiste en un e-commerce de venta de animes y mangas,
-              el cual está realizado con tecnologías como:{" "}
+              del backend. El proyecto consiste en un e-commerce de venta de
+              animes y mangas, el cual está realizado con tecnologías como:{" "}
               <span className=" font-semibold text-teal-500 ">
                 JavaScript, React, Sass, Node, Express, TypeScript, PostgreSQL y
                 Sequelize.
               </span>{" "}
-              Además para el desarrollo del proyecto y el flujo de
-              trabajo usamos herramientas y tecnologías como:{" "}
+              Además para el desarrollo del proyecto y el flujo de trabajo
+              usamos herramientas y tecnologías como:{" "}
               <span className=" font-semibold text-teal-500 ">
                 GIT, Github, Trello, SCRUM,
               </span>{" "}
