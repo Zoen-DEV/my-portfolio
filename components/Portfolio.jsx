@@ -56,8 +56,8 @@ const Portfolio = ({ screen }) => {
               <span className=" font-semibold text-teal-500 ">
                 metodologías ágiles
               </span>{" "}
-              realizando la migración de la plataforma de la empresa tanto del
-              lado del frontend (de{" "}
+              realizando la migración y el re-diseño de la plataforma de la
+              empresa tanto del lado del frontend (de{" "}
               <span className=" font-semibold text-teal-500 ">WordPress</span> a
               una SPA de{" "}
               <span className=" font-semibold text-teal-500 ">React.js</span>
