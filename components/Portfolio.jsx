@@ -42,7 +42,7 @@ const Portfolio = ({ screen }) => {
             <h3
               className={` ${
                 screen < 800 ? "text-white" : "text-gray-900"
-              } drop-shadow-md font-bold text-2xl`}
+              } drop-shadow-md font-bold text-2xl text-center`}
             >
               Voluntariado en We Exchange SAC (Fintech)
             </h3>
@@ -88,7 +88,7 @@ const Portfolio = ({ screen }) => {
         {screen < 800 ? (
           <div
             data-aos="fade-in"
-            className="flex flex-col bg-gray-800  w-full gap-5 rounded-md justify-between "
+            className="flex flex-col bg-gray-800 w-full gap-5 rounded-md justify-between "
           >
             <Image
               src={project1}
@@ -100,7 +100,9 @@ const Portfolio = ({ screen }) => {
                 screen < 800 ? "w-full gap-5 py-3" : "w-2/6"
               } flex flex-col justify-between items-center px-4 `}
             >
-              <h3 className={`text-white drop-shadow-md font-bold text-2xl`}>
+              <h3
+                className={`text-white drop-shadow-md font-bold text-2xl text-center`}
+              >
                 Portfolio template
               </h3>
               <p className={` text-xl w-full text-white drop-shadow-md `}>
@@ -172,7 +174,7 @@ const Portfolio = ({ screen }) => {
           } gap-5 rounded-md justify-between `}
         >
           <Image
-            src={project1}
+            src={project2}
             data-aos={screen > 800 ? "fade-right" : ""}
             className={` ${
               screen < 800 ? "w-full" : "w-2/6"
@@ -188,26 +190,26 @@ const Portfolio = ({ screen }) => {
             <h3
               className={` ${
                 screen < 800 ? "text-white" : "text-gray-900"
-              } drop-shadow-md font-bold text-2xl`}
+              } drop-shadow-md font-bold text-2xl text-center`}
             >
-              Portfolio template
+              Animercce (Henry proyecto final)
             </h3>
-            <p
-              className={` text-xl w-full ${
-                screen < 800 ? "text-white" : "text-gray-900"
-              } drop-shadow-md `}
-            >
-              Este es un proyecto individual donde realicé un template de un
-              portafolio con tecnologías como:{" "}
+            <p className={` text-xl w-full text-white drop-shadow-md `}>
+              Este fue el proyecto final del bootcamp de Henry, donde pude
+              reforzar todos mis conocimientos tanto del lado del frontend como
+              del backend.
+              El proyecto consiste en un e-commerce de venta de animes y mangas,
+              el cual está realizado con tecnologías como:{" "}
               <span className=" font-semibold text-teal-500 ">
-                React, Next.js, Tailwind css y React-icons.
+                JavaScript, React, Sass, Node, Express, TypeScript, PostgreSQL y
+                Sequelize.
               </span>{" "}
-              El enfoque de este proyecto es que sea intuitivo y fácil de leer,
-              además de haber implementado una funcionalidad de{" "}
+              Además para el desarrollo del proyecto y el flujo de
+              trabajo usamos herramientas y tecnologías como:{" "}
               <span className=" font-semibold text-teal-500 ">
-                Dark and Light themes
+                GIT, Github, Trello, SCRUM,
               </span>{" "}
-              para la comodidad del usuario.
+              entre otras.
             </p>
             <Link
               href="https://first-portfolio-template.vercel.app/"
