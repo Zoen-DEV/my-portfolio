@@ -77,11 +77,11 @@ const Portfolio = ({ screen }) => {
               </span>
             </p>
             <Link
-              href="https://first-portfolio-template.vercel.app/"
+              href="https://www.weex.pe/"
               target="_blank"
               className=" flex items-center gap-2 self-end bg-gradient-to-r transition-all from-fuchsia-500 to-orange-600 px-2 shadow-md rounded-sm py-1 text-teal-50 tracking-wider hover:scale-110"
             >
-              Ver proyecto <BiLink />
+              Web de la empresa <BiLink />
             </Link>
           </div>
         </div>
@@ -226,7 +226,7 @@ const Portfolio = ({ screen }) => {
               entre otras.
             </p>
             <Link
-              href="https://first-portfolio-template.vercel.app/"
+              href="https://animercce.vercel.app/"
               target="_blank"
               className=" flex items-center gap-2 self-end bg-gradient-to-r transition-all from-fuchsia-500 to-orange-600 px-2 shadow-md rounded-sm py-1 text-teal-50 tracking-wider hover:scale-110"
             >
