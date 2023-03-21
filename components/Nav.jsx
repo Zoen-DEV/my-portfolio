@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { BiUpArrow } from "react-icons/bi";
 
-const Nav = ({screen}) => {
+const Nav = ({ screen }) => {
   const [toggleNav, setToggleNav] = useState(false);
 
   const handleResume = (e) => {
@@ -37,23 +37,23 @@ const Nav = ({screen}) => {
           }`}
         >
           <li className="whitespace-nowrap transition-all hover:text-teal-600 hover:scale-110 ">
-            <Link href="/">HOME</Link>
+            <Link href="/">INICIO</Link>
           </li>
           <li className="whitespace-nowrap transition-all hover:text-teal-600 hover:scale-110 ">
-            <Link href="#about">ABOUT</Link>
+            <Link href="#about">SOBRE MÍ</Link>
           </li>
           <li className="whitespace-nowrap transition-all hover:text-teal-600 hover:scale-110 ">
-            <Link href="#portfolio">PORTFOLIO</Link>
+            <Link href="#portfolio">PORTAFOLIO</Link>
           </li>
           <li className="whitespace-nowrap transition-all hover:text-teal-600 hover:scale-110 ">
-            <Link href="#contact">CONTACT ME</Link>
+            <Link href="#contact">CONTACTO</Link>
           </li>
           <li className="whitespace-nowrap">
             <button
               onClick={handleResume}
               className=" bg-gradient-to-r transition-all from-fuchsia-500 to-orange-600 px-2 shadow-md rounded-sm py-1 text-teal-50 tracking-wider hover:scale-110"
             >
-              RESUME
+              Mi CV
             </button>
           </li>
         </ul>
@@ -64,22 +64,22 @@ const Nav = ({screen}) => {
         >
           <li className="font-bold whitespace-nowrap transition-all hover:text-teal-600 hover:scale-110 ">
             <Link onClick={() => setToggleNav(false)} href="/">
-              HOME
+              INICIO
             </Link>
           </li>
           <li className="font-bold whitespace-nowrap transition-all hover:text-teal-600 hover:scale-110 ">
             <Link onClick={() => setToggleNav(false)} href="#about">
-              ABOUT
+              SOBRE MÍ
             </Link>
           </li>
           <li className="font-bold whitespace-nowrap transition-all hover:text-teal-600 hover:scale-110 ">
             <Link onClick={() => setToggleNav(false)} href="#portfolio">
-              PORTFOLIO
+              PORTAFOLIO
             </Link>
           </li>
           <li className="font-bold whitespace-nowrap transition-all hover:text-teal-600 hover:scale-110 ">
             <Link onClick={() => setToggleNav(false)} href="#contact">
-              CONTACT ME
+              CONTACTO
             </Link>
           </li>
           <li className="whitespace-nowrap">
@@ -87,14 +87,16 @@ const Nav = ({screen}) => {
               onClick={handleResume}
               className=" bg-gradient-to-r transition-all from-fuchsia-500 to-orange-600 px-2 shadow-md rounded-sm py-1 text-teal-50 tracking-wider hover:scale-110"
             >
-              RESUME
+              Mi CV
             </button>
           </li>
         </ul>
         <button
           onClick={() => setToggleNav(!toggleNav)}
           className={` ${screen > 1024 ? "hidden" : ""} ${
-            toggleNav ? " flex w-3/6 top-3/4 left-1/4 mt-10 justify-center animate-bounce absolute m-auto text-orange-600" : ""
+            toggleNav
+              ? " flex w-3/6 top-3/4 left-1/4 mt-10 justify-center animate-bounce absolute m-auto text-orange-600"
+              : ""
           } text-2xl`}
         >
           {toggleNav ? <BiUpArrow /> : <FaBars />}

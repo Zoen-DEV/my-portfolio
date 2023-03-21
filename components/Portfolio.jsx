@@ -51,7 +51,7 @@ const Portfolio = ({ screen }) => {
                 screen < 800 ? "text-white" : "text-gray-900"
               } drop-shadow-md `}
             >
-              Estuve colaborando 2 meses con esta empresa, aquí trabajé junto a
+              Estoy colaborando hace 4 meses con esta empresa, aquí trabajé junto a
               un equipo de desarrolladores con{" "}
               <span className=" font-semibold text-teal-500 ">
                 metodologías ágiles
