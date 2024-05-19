@@ -4,6 +4,7 @@ import React from "react";
 import project1 from "../public/project1.png";
 import project2 from "../public/project2.png";
 import project3 from "../public/project3.png";
+import guatapay from "../public/guatapay.png";
 import { BiLink } from "react-icons/bi";
 
 const Portfolio = ({ screen }) => {
@@ -19,6 +20,54 @@ const Portfolio = ({ screen }) => {
         PORTAFOLIO
       </h1>
       <article className=" flex flex-wrap gap-20 justify-center">
+        <div
+          data-aos={screen < 800 ? "fade-in" : ""}
+          className={`flex ${
+            screen < 800 ? "flex-col bg-gray-800  w-full" : "w-5/6"
+          } gap-5 rounded-md justify-between `}
+        >
+          <div
+            data-aos={screen > 800 ? "fade-in" : ""}
+            className={` ${
+              screen < 800 ? "w-full gap-5 py-3" : "w-4/6 gap-2"
+            } flex flex-col justify-between items-center px-4 `}
+          >
+            <h3
+              className={` ${
+                screen < 800 ? "text-white" : "text-gray-900"
+              } drop-shadow-md font-bold text-2xl text-center`}
+            >
+              Guatapay Landing Page (para Limboteams)
+            </h3>
+            <p
+              className={` text-xl w-full ${
+                screen < 800 ? "text-white" : "text-gray-900"
+              } drop-shadow-md `}
+            >
+              Estoy trabajando en Limboteams desde Junio del 2023, aquí trabajo
+              junto a un equipo de desarrolladores con{" "}
+              <span className=" font-semibold text-teal-500 ">
+                metodologías ágiles.
+              </span>{" "}
+              Estoy participando en 2 proyectos, uno en Backend con Nest.js y
+            </p>
+            <Link
+              href="https://landing-dev.guatapay.com/"
+              target="_blank"
+              className=" flex items-center gap-2 self-end bg-gradient-to-r transition-all from-fuchsia-500 to-orange-600 px-2 shadow-md rounded-sm py-1 text-teal-50 tracking-wider hover:scale-110"
+            >
+              Guatapay Landing page <BiLink />
+            </Link>
+          </div>
+          <Image
+            src={guatapay}
+            data-aos={screen > 800 ? "fade-left" : ""}
+            className={` ${
+              screen < 800 ? "w-full" : "w-2/6"
+            } h-full shadow-md rounded-md transition-all`}
+            alt="Guatapay"
+          />
+        </div>
         <div
           data-aos={screen < 800 ? "fade-in" : ""}
           className={`flex ${
@@ -51,8 +100,8 @@ const Portfolio = ({ screen }) => {
                 screen < 800 ? "text-white" : "text-gray-900"
               } drop-shadow-md `}
             >
-              Estoy colaborando hace 4 meses con esta empresa, aquí trabajé junto a
-              un equipo de desarrolladores con{" "}
+              Estoy colaborando hace 4 meses con esta empresa, aquí trabajé
+              junto a un equipo de desarrolladores con{" "}
               <span className=" font-semibold text-teal-500 ">
                 metodologías ágiles
               </span>{" "}
