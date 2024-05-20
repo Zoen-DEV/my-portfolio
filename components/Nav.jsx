@@ -6,7 +6,7 @@ import { BiUpArrow } from "react-icons/bi";
 const Nav = ({ screen }) => {
   const [toggleNav, setToggleNav] = useState(false);
 
-  const handleResume = (e) => {
+  const handleResume = () => {
     window.open(
       "https://drive.google.com/file/d/1p-cWGYZGSQ8bYNy391D9JP4J5nAJADCG/view?usp=sharing",
       "_blank"
