@@ -49,7 +49,7 @@ const Portfolio = ({ screen }) => {
               <span className=" font-semibold text-teal-500 ">
                 metodologías ágiles.
               </span>{" "}
-              Estoy participando en 2 proyectos, uno en Backend con Nest.js y
+              Estoy participando en 2 proyectos, uno en Backend con Nest.js
             </p>
             <Link
               href="https://landing-dev.guatapay.com/"
